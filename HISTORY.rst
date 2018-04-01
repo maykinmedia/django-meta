@@ -8,6 +8,7 @@ History
 ==================
 
 * Fix minor documentation error
+* Add explicit Schema.org support
 
 1.4.1 (2018-01-21)
 ==================

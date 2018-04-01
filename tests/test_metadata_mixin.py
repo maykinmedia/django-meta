@@ -276,6 +276,8 @@ class MetadataMixinTestCase(TestCase):
             'http://foo.com/static/images/foo.gif'
         )
         settings.SITE_DOMAIN = 'example.com'
+        settings.FB_PAGES = ''
+        settings.FB_APPID = ''
 
     def test_get_context(self):
         class Super(object):

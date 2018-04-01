@@ -169,6 +169,7 @@ class MetaObjectTestCase(TestCase):
 
     def test_get_full_url_without_schema(self):
         settings.SITE_PROTOCOL = 'https'
+        settings.SITE_DOMAIN = 'bat.com'
         m = Meta()
         self.assertEqual(
             m.get_full_url('//foo.com/foo/bar'),
