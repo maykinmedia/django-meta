@@ -51,6 +51,7 @@ GPLUS_TYPES = (
 
 DEFAULT_IMAGE = getattr(django_settings, 'META_DEFAULT_IMAGE', '')
 DEFAULT_TYPE = getattr(django_settings, 'META_SITE_TYPE', OBJECT_TYPES[0][0])
+DEFAULT_AUTHOR = getattr(django_settings, 'META_DEFAULT_AUTHOR', '')
 FB_TYPE = getattr(django_settings, 'META_FB_TYPE', OBJECT_TYPES[0][0])
 FB_TYPES = getattr(django_settings, 'META_FB_TYPES', FB_TYPES)
 FB_APPID = getattr(django_settings, 'META_FB_APPID', '')

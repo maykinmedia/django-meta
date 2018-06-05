@@ -235,6 +235,9 @@ class Meta(FullUrlMixin):
             schema[key] = process_item(val)
         if '@type' not in schema:
             schema['@type'] = self.gplus_type
+            schema['@author'] = settings.DEFAULT_AUTHOR
+            schema['name'] = self.title
+            schema['url'] = self.url
         # after generating the full schema, we can save it in the local cache for future uses
         if isinstance(self._obj, ModelMeta):
             visited[self._obj._local_key] = schema
